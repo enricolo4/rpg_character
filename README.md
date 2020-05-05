@@ -40,6 +40,6 @@ A aplicação deve criar um personagem de escolha do player(cadastrado pela apli
 * O payload foi uma inspiração tirada do seguinte site
     * https://drive.google.com/file/d/1v_LjX-UU7bIANntPS__H28M7TFB5Ymux/view
     * https://smolderingwizard.files.wordpress.com/2013/11/dd_char_sheet_thumb.png
-* Vocês podem alterar e/ou adicionar as informações, copiar do livro dos monstros que qualquer estilo de RPG
+* Vocês podem alterar e/ou adicionar as informações, copiar do livro dos monstros de qualquer estilo de RPG
 * Usem a criatividade.
   
