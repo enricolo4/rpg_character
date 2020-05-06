@@ -1,0 +1,24 @@
+RPG_Character:
+
+controller -> Camada web
+domain -> Camada de regra de negócio
+
+
+* Toda a camada de "domain" não conhece a camada de web/controller (rest) e nem a camada de database/persistente(mongo).
+
+
+Character:
+
+Etapas da criação dos arquivos:
+
+1) Criação do domain/model/character para definir a classe e atributos de character;
+2) Criação do persitence/character/dbo/character_dbo para criar o modelo da classe character que irá pro banco de dados;
+3) Criacação do persitence/character/repository/character_repository para gravar o modelo dbo no banco de dados;
+4) Criação do domain/service/character/character_service chama o character_repository para salvar o modelo no banco de dados;
+5) Criação do controller/character/dto/character_dto é responsável por receber/encapsular  os dados que serão transmitidos pela camada Web;
+6) Criação do controller/character/character_controller é responsável por enviar o dto pra camada web (formatando via json)
+
+
+Dúvidas:
+* character_repository -> diferença do character_dbo e do character_converted_to_dbo
+* Diferença entre os passos 3/4

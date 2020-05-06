@@ -1,12 +1,13 @@
-import falcon as falcon
-from falcon import Response, Request, json
+import falcon
+from waitress import serve
+
+from controller.character.character_controller import CharacterController
+from controller.health.health_controller import HealthController
 
 application = falcon.API()
 
-
-class HealthController:
-    def on_get(self, request: Request, response: Response):
-        response.body = json.dumps({"status": "up"})
-
-
 application.add_route("/health", HealthController())
+application.add_route("/character", CharacterController())
+
+if __name__ == '__main__':
+    serve(app=application, host="127.0.0.1", port=5555)
