@@ -9,3 +9,5 @@ application = falcon.API()
 application.add_route("/health", HealthController())
 application.add_route("/character", CharacterController())
 
+if __name__ == '__main__':
+    serve(app=application, host="127.0.0.1", port=5555)
