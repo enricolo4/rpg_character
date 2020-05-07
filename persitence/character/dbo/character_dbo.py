@@ -53,5 +53,4 @@ def character_to_dbo(character: Character) -> CharacterDBO:
 
 @dataclass
 class Guest:
-    name: str
     age: int
