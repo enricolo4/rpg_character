@@ -49,8 +49,3 @@ def character_to_dbo(character: Character) -> CharacterDBO:
         wisdom=character.wisdom,
         constitution=character.constitution
     )
-
-
-@dataclass
-class Guest:
-    name: str
